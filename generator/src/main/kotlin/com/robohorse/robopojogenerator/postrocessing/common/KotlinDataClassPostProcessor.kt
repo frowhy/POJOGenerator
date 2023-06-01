@@ -102,7 +102,7 @@ internal class KotlinDataClassPostProcessor(
                 classItem,
                 KotlinAnnotations.JACKSON.classAnnotation,
                 KotlinAnnotations.JACKSON.annotation,
-                ImportsTemplate.JACKSON.imports
+                ImportsTemplate.Jackson(useLombok = false, useIgnoreUnknown = false).imports
             )
         }
 

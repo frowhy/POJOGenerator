@@ -17,6 +17,16 @@ subprojects {
     apply(plugin = "maven-publish")
 
     repositories {
+        val codingArtifactsRepoUrl: String by project
+        val codingArtifactsGradleUsername: String by project
+        val codingArtifactsGradlePassword: String by project
+        maven {
+            url = uri(codingArtifactsRepoUrl)
+            credentials {
+                username = codingArtifactsGradleUsername
+                password = codingArtifactsGradlePassword
+            }
+        }
         mavenCentral()
     }
 

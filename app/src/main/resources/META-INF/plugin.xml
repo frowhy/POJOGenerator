@@ -1,11 +1,11 @@
 <idea-plugin>
-    <id>com.robohorse.robopojogenerator</id>
-    <name>RoboPOJOGenerator</name>
-    <vendor email="robohorsed@gmail.com" url="https://github.com/robohorse/RoboPOJOGenerator">ROBOHORSE</vendor>
+    <id>com.coreyun.pojogenerator</id>
+    <name>POJOGenerator</name>
+    <vendor email="frowhy@gmail.com" url="https://github.com/frowhy/POJOGenerator">Govern Fu</vendor>
 
     <extensions defaultExtensionNs="com.intellij">
         <applicationService serviceImplementation="com.robohorse.robopojogenerator.persistense.ViewStateService" />
-        <notificationGroup id="RoboPOJO Generator" displayType="BALLOON" key="com.robohorse.robopojogenerator"/>
+        <notificationGroup id="POJO Generator" displayType="BALLOON" key="com.robohorse.robopojogenerator"/>
     </extensions>
 
     <depends>com.intellij.modules.lang</depends>

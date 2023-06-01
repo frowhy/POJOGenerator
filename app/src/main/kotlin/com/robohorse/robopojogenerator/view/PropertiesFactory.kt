@@ -1,11 +1,13 @@
 package com.robohorse.robopojogenerator.view
 
 import com.robohorse.robopojogenerator.models.AdditionalPropertiesVM.UseGetters
+import com.robohorse.robopojogenerator.models.AdditionalPropertiesVM.UseIgnoreUnknown
 import com.robohorse.robopojogenerator.models.AdditionalPropertiesVM.UseJavaPrimitives
 import com.robohorse.robopojogenerator.models.AdditionalPropertiesVM.UseKotlinDataClasses
 import com.robohorse.robopojogenerator.models.AdditionalPropertiesVM.UseKotlinNullableFields
 import com.robohorse.robopojogenerator.models.AdditionalPropertiesVM.UseKotlinParcelable
 import com.robohorse.robopojogenerator.models.AdditionalPropertiesVM.UseKotlinSingleDataClass
+import com.robohorse.robopojogenerator.models.AdditionalPropertiesVM.UseLombok
 import com.robohorse.robopojogenerator.models.AdditionalPropertiesVM.UseLombokValue
 import com.robohorse.robopojogenerator.models.AdditionalPropertiesVM.UseMoshiAdapterAnnotation
 import com.robohorse.robopojogenerator.models.AdditionalPropertiesVM.UseSetters
@@ -87,8 +89,10 @@ internal class PropertiesFactory {
                 Jackson(
                     properties = listOf(
                         UseJavaPrimitives(selected = true),
+                        UseLombok(selected = true),
+                        UseIgnoreUnknown(),
                         UseSetters(),
-                        UseGetters(selected = true),
+                        UseGetters(),
                         UseToString()
                     )
                 ),

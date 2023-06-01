@@ -51,11 +51,13 @@ internal abstract class JavaPostProcessor(
         }
         is JacksonJavaRecords,
         is Jackson -> {
+            val annotations = PojoAnnotations.Jackson(generationModel.useLombok, generationModel.useIgnoreUnknown)
+            val importsTemplate = ImportsTemplate.Jackson(generationModel.useLombok, generationModel.useIgnoreUnknown)
             generateHelper.setAnnotations(
                 classItem,
-                PojoAnnotations.JACKSON.classAnnotation,
-                PojoAnnotations.JACKSON.annotation,
-                ImportsTemplate.JACKSON.imports
+                annotations.classAnnotation,
+                annotations.annotation,
+                importsTemplate.imports
             )
         }
         is FastJsonJavaRecords,

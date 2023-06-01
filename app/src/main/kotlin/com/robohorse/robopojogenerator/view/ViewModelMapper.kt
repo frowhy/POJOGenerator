@@ -2,11 +2,13 @@ package com.robohorse.robopojogenerator.view
 
 import com.robohorse.robopojogenerator.form.GeneratorVew
 import com.robohorse.robopojogenerator.models.AdditionalPropertiesVM.Companion.GETTERS
+import com.robohorse.robopojogenerator.models.AdditionalPropertiesVM.Companion.IGNORE_UNKNOWN
 import com.robohorse.robopojogenerator.models.AdditionalPropertiesVM.Companion.JAVA_PRIMITIVE_TYPES
 import com.robohorse.robopojogenerator.models.AdditionalPropertiesVM.Companion.KOTLIN_DATA_CLASSES
 import com.robohorse.robopojogenerator.models.AdditionalPropertiesVM.Companion.KOTLIN_NULLABLE_FIELDS
 import com.robohorse.robopojogenerator.models.AdditionalPropertiesVM.Companion.KOTLIN_PARCELABLE
 import com.robohorse.robopojogenerator.models.AdditionalPropertiesVM.Companion.KOTLIN_SINGLE_DATA_CLASS
+import com.robohorse.robopojogenerator.models.AdditionalPropertiesVM.Companion.LOMBOK
 import com.robohorse.robopojogenerator.models.AdditionalPropertiesVM.Companion.LOMBOK_VALUE
 import com.robohorse.robopojogenerator.models.AdditionalPropertiesVM.Companion.MOSHI_ADAPTER
 import com.robohorse.robopojogenerator.models.AdditionalPropertiesVM.Companion.SETTERS
@@ -32,6 +34,8 @@ internal class ViewModelMapper(
             useKotlinSingleDataClass = resolveCheckBox(KOTLIN_SINGLE_DATA_CLASS),
             kotlinNullableFields = resolveCheckBox(KOTLIN_NULLABLE_FIELDS),
             javaPrimitives = resolveCheckBox(JAVA_PRIMITIVE_TYPES),
+            useLombok = resolveCheckBox(LOMBOK),
+            useIgnoreUnknown = resolveCheckBox(IGNORE_UNKNOWN),
             useLombokValue = resolveCheckBox(LOMBOK_VALUE),
             useTabsIndentation = useTabsIndentation.isSelected,
             useMoshiAdapter = resolveCheckBox(MOSHI_ADAPTER),

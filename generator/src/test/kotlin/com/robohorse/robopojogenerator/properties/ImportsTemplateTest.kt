@@ -7,7 +7,7 @@ import com.robohorse.robopojogenerator.properties.templates.ImportsTemplate.AUTO
 import com.robohorse.robopojogenerator.properties.templates.ImportsTemplate.Companion.SERIALIZED_NAME
 import com.robohorse.robopojogenerator.properties.templates.ImportsTemplate.FAST_JSON
 import com.robohorse.robopojogenerator.properties.templates.ImportsTemplate.GSON
-import com.robohorse.robopojogenerator.properties.templates.ImportsTemplate.JACKSON
+import com.robohorse.robopojogenerator.properties.templates.ImportsTemplate.Jackson
 import com.robohorse.robopojogenerator.properties.templates.ImportsTemplate.LOGAN_SQUARE
 import com.robohorse.robopojogenerator.properties.templates.ImportsTemplate.MOSHI
 import com.robohorse.robopojogenerator.properties.templates.JSON_FIELD
@@ -32,7 +32,7 @@ internal class ImportsTemplateTest {
 
     @Test
     fun check_JACKSON() {
-        assertEquals(JACKSON.imports[0], JSON_PROPERTY)
+        assertEquals(Jackson(useLombok = false, useIgnoreUnknown = false).imports[0], JSON_PROPERTY)
     }
 
     @Test

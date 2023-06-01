@@ -57,6 +57,8 @@ internal class ViewStateManager(
                 model.useStrings
             filterIsInstance<AdditionalPropertiesVM.UseJavaPrimitives>().firstOrNull()?.selected =
                 model.javaPrimitives
+            filterIsInstance<AdditionalPropertiesVM.UseLombok>().firstOrNull()?.selected =
+                model.useLombok
             filterIsInstance<AdditionalPropertiesVM.UseKotlinParcelable>().firstOrNull()?.selected =
                 model.useKotlinParcelable
             filterIsInstance<AdditionalPropertiesVM.UseKotlinSingleDataClass>().firstOrNull()?.selected =

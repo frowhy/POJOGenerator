@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.5.0
+- Json sort support.
+- Add jackson lombok and ignore unknown annotations.
+
 ## 2.4.0
 - Nested arrays issue fix
 

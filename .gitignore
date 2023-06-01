@@ -1,9 +1,9 @@
 .idea
 *.iml
 out
-RoboPOJOGenerator.jar
+POJOGenerator.jar
 .DS_Store
-RoboPOJOGenerator.zip
+POJOGenerator.zip
 lib
 .gradle
 build

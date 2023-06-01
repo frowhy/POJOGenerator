@@ -36,4 +36,4 @@ internal class GeneratorViewFactory(
     }
 }
 
-private const val PLUGIN_TITLE = "RoboPOJOGenerator"
+private const val PLUGIN_TITLE = "POJOGenerator"

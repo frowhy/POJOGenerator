@@ -1,6 +1,4 @@
-# RoboPOJOGenerator
-
-[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-RoboPOJOGenerator-green.svg?style=true)](https://android-arsenal.com/details/1/4429)
+# POJOGenerator
 
 <!-- Plugin description -->
 Intellij Idea and Android Studio plugin for JSON to POJO transformation.
@@ -15,9 +13,7 @@ Keywords: JsonToPojo, Json2Pojo, Kotlin, GSON, FastJSON, AutoValue, Jackson, Log
 
 
 # Download
-get it and install from <a href="https://plugins.jetbrains.com/plugin/8634">plugin repository</a> or simply find it in <b>Preferences</b> -> <b>Plugins</b> -> <b>Marketplace</b> -> <b>RoboPOJOGenerator</b>
-
-<p><img src="images/install_v201.png" width="50%" height="50%"></p>
+get it and install from <a href="https://plugins.jetbrains.com/plugin/21927">plugin repository</a> or simply find it in <b>Preferences</b> -> <b>Plugins</b> -> <b>Marketplace</b> -> <b>POJOGenerator</b>
 
 # How to use
 
@@ -41,7 +37,7 @@ see log of changes
 
 
 # Changelog
-Please find it [here](https://github.com/robohorse/RoboPOJOGenerator/blob/master/app/CHANGELOG.md).
+Please find it [here](https://github.com/frowhy/POJOGenerator/blob/master/app/CHANGELOG.md).
 
 # About
 Copyright 2016 Vadim Shchenev, and licensed under the MIT license. No attribution is necessary but it's very much appreciated. Star this project if you like it.

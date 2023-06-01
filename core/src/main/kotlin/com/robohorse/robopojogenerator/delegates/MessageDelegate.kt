@@ -53,4 +53,4 @@ internal class MessageDelegateImpl : MessageDelegate {
 
 private const val TITLE_OK = "OK"
 private const val TITLE_SUCCESS = "POJO generation: Success"
-private const val GROUP_ID = "RoboPOJO Generator"
+private const val GROUP_ID = "POJO Generator"

@@ -17,6 +17,8 @@ data class GenerationModel(
     val useKotlinParcelable: Boolean,
     val kotlinNullableFields: Boolean,
     val javaPrimitives: Boolean,
+    val useLombok: Boolean,
+    val useIgnoreUnknown: Boolean,
     val useTabsIndentation: Boolean,
     val useLombokValue: Boolean,
     val useMoshiAdapter: Boolean,

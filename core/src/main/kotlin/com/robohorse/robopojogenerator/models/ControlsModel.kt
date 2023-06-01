@@ -147,6 +147,14 @@ sealed class AdditionalPropertiesVM(
         selected: Boolean = false
     ) : AdditionalPropertiesVM(selected, JAVA_PRIMITIVE_TYPES)
 
+    class UseLombok(
+        selected: Boolean = false
+    ) : AdditionalPropertiesVM(selected, LOMBOK)
+
+    class UseIgnoreUnknown(
+        selected: Boolean = false
+    ) : AdditionalPropertiesVM(selected, IGNORE_UNKNOWN)
+
     class UseKotlinParcelable(
         selected: Boolean = false
     ) : AdditionalPropertiesVM(selected, KOTLIN_PARCELABLE)
@@ -177,6 +185,8 @@ sealed class AdditionalPropertiesVM(
         const val JAVA_PRIMITIVE_TYPES = "use Java primitive fields"
         const val TO_STRING = "override toString()"
         const val LOMBOK_VALUE = "use @Value"
+        const val LOMBOK = "use @Data"
+        const val IGNORE_UNKNOWN = "use @JsonIgnoreProperties(ignoreUnknown = true)"
 
         const val KOTLIN_PARCELABLE = "parcelable (Android)"
         const val KOTLIN_SINGLE_DATA_CLASS = "single file"
